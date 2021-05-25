@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'islands/new', to: 'islands#new'
   post 'islands', to: 'islands#create'
  # show
- get 'islands/:id', to: 'island#show', as: :island
+ get 'islands/:id', to: 'islands#show', as: :island
  #edit
   get 'islands/:id/edit', to: 'islands#edit'
  #update
