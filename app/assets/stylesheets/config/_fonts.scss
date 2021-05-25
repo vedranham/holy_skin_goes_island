@@ -1,10 +1,10 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Raleway:ital,wght@0,300;0,500;0,600;1,300&display=swap');
+
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
-
+$font-primary:'Raleway', sans-serif;
+$font-secondary: 'Pattaya', sans-serif;
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
@@ -14,3 +14,10 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+$size-header-1: 64px;
+$size-header-2: 48px;
+$size-header-3: 32px;
+$size-body-l: 24px;
+$size-body-m: 18px;
+$size-body-s: 16px;
