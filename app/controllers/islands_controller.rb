@@ -3,27 +3,33 @@ class IslandsController < ApplicationController
     @islands = Island.all
   end
 
-  def show
-    @island = Island.find(params[:id])
+  def show 
+  end
+  
+  def new
+    @island = Island.new
+  end
+
+  def create
+    island = Island.new(island_params)
+    island.save
+    redirect_to island_path(island)
   end
 
   def edit
-
   end
 
   def update
-    @island.update(params[:island])
-    redirect_to_island_path(@island)
+    redirect_to island_path(@island)
   end
-
 
 private
 
-  def islands_params
+  def island_params
     params.require(:island).permit(:name, :address, :description, :daily_rate, :availability, :user_id)
   end
 
   def set_island
-  @island = Island.find(params[:id])
+    @island = Island.find(params[:id])
   end
 end
