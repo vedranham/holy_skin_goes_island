@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Cleaning database..."
+Island.destroy_all
+
+puts "DB cleaned"
+puts "Visiting Islands..."
+
+5.times do
+  island = Island.new(
+    name: Faker::Mountain.range,
+    address: Faker::Address.street_name,
+    description: Faker::Restaurant.description,
+    daily_rate: Faker::Number.number(digits: 5),
+    availability: Faker::Boolean.boolean)
+end
+
+puts "Seeds created!"
