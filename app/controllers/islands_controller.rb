@@ -3,9 +3,9 @@ class IslandsController < ApplicationController
     @islands = Island.all
   end
 
-  def show 
+  def show
   end
-  
+
   def new
     @island = Island.new
   end
@@ -21,6 +21,11 @@ class IslandsController < ApplicationController
 
   def update
     redirect_to island_path(@island)
+  end
+
+  def destroy
+    @island.destroy
+    redirect_to island_path
   end
 
 private

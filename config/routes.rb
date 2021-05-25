@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   get 'islands/:id/edit', to: 'islands#edit'
  #update
  patch 'islands/:id', to: 'islands#update'
+ #destroy
+ delete 'islands/:id', to: 'islands#destroy'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
