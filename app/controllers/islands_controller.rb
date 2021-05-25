@@ -1,11 +1,12 @@
 class IslandsController < ApplicationController
+   before_action :set_island, only: [ :show ]
   def index
     @islands = Island.all
   end
 
-  def show 
+  def show
   end
-  
+
   def new
     @island = Island.new
   end
