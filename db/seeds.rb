@@ -11,7 +11,7 @@ Island.destroy_all
 
 puts "DB cleaned"
 puts "Visiting Islands..."
-user = User.new(name: 'Mario', e_mail: 'mario@nasa.us', password: '123456')
+user = User.new(email: 'mario@nasa.us', password: '123456')
 user.save!
 5.times do
   island = Island.new(
