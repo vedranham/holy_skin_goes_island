@@ -6,7 +6,7 @@
   <div class="cards">
     <% @islands.each do |island| %>
 
-      <div class='home-card' style= " background-image: url(<%= image_path 'island1.jpeg' %>);">
+      <div class='home-card' style= " background-image: url(<%= image_path 'island1.jpeg' %>)">
         <%= island.name %>
         <%= island.address %>
         <%= link_to "Show", island %>
