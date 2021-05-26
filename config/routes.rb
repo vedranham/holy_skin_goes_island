@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # index
   root to: "pages#home"
   get "/islands", to: 'islands#index'
