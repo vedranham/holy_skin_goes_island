@@ -1,24 +1,50 @@
-.cards {
+.all-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  // grid-template-columns: 12px 12px 12px;
-  // grid-template-rows: 12px 12px 12px;
-  grid-gap: 9px;
+  grid-gap: 40px;
+  margin: 50px 0 0 0;
 }
 
-.home-card {
-
-  background-size: cover;
-  background-position: center;
-  height: 150px;
-  border-radius: 1px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  align-items: center;
-  justify-content: space-around;
-  font-size: 22px;
-  color: white;
-  font-weight: bolder;
-  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+.card-trip {
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 18px;
 }
 
+.card-trip > img {
+  border-radius: 18px 18px 0 0;
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-family: $body-font;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-family: $body-font;
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
 

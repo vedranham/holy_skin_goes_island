@@ -13,7 +13,7 @@ puts "DB cleaned"
 puts "Visiting Islands..."
 user = User.new(email: 'mario@nasa.us', password: '123456')
 user.save!
-5.times do
+24.times do
   island = Island.new(
     name: Faker::Mountain.range,
     address: Faker::Address.street_name,
