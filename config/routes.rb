@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # index
   get "/", to: 'islands#index'
 
