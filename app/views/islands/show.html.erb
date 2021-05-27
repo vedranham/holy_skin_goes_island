@@ -44,7 +44,26 @@
     <p><%= @island.description %></p>
   </div>
 
-  <a class="btn btn-flat" href="#"><%= link_to "Back to all islands", root_path %></a>
+
+
+
+<div class="container py-10">
+  <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-white rounded p-3 shadow">
+        <h3>Book your dream Island <%= @island.name %></h3>
+        <%= simple_form_for [@island, @booking] do |f| %>
+          <%= f.input :description, placeholder: 'Enter relevant info about your booking' %>
+          <%= f.input :start_time, placeholder: 'Enter a date' %>
+          <%= f.input :end_time, placeholder: 'Enter a date' %>
+          <%= f.submit class: 'btn btn-flat' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <a class="btn btn-flat" href="#"><%= link_to "Back to all islands", root_path %></a>
 </div>
 
 
