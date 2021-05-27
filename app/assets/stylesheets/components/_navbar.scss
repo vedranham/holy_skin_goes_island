@@ -16,3 +16,19 @@
 .navbar-lewagon-white {
   background-color: white;
 }
+
+.fas {
+  font-size: $size-header-3;
+  color: $primary-colour;
+}
+
+.far {
+  font-size: $size-header-3;
+  color: black;
+}
+
+span {
+  font-family: $headers-font;
+  font-size: $size-header-3;
+  font-weight: 100;
+}
