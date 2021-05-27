@@ -7,6 +7,11 @@ Rails.application.routes.draw do
     resources :bookings, only: [:create]
   end
   resources :bookings, only: [:destroy, :show]
+=======
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  resources :dashboard, only: :index
+
 end
 
 #   get "/islands", to: 'islands#index'

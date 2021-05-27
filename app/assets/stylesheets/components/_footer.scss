@@ -1,0 +1,22 @@
+
+
+footer {
+background: $grey-5;
+display: flex;
+justify-content: center;
+align-items: center;
+
+i {
+  padding: 24px;
+  color: $grey-1;
+}
+
+ i:hover {
+  cursor: pointer;
+  color: $grey-2;
+ }
+
+ .fa-heart {
+  color: $secondary-colour;
+ }
+}

@@ -1,12 +1,4 @@
-<h1>Islands</h1>
-<head>
-<ul>
-  <% @islands.each do |island| %>
-    <li>
-      <%= island.name %>
-      <%= link_to "Show", island %>
-    </li>
-  <% end %>
-</ul>
-</head>
-
+<%= render "components/navbar" %>
+<%= render "components/banner" %>
+<%= render "components/cards" %>
+<%= render "components/footer" %>
