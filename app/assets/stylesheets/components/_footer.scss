@@ -1,30 +1,22 @@
-.footer {
-  // background: #F4F4F4;
-  // align-items: center;
-  // justify-content: space-between;
-  // height:100px;
-  // padding: 0px 50px;
 
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-  color: rgba(0,0,0,0.3);
+
+footer {
+background: $grey-5;
+display: flex;
+justify-content: center;
+align-items: center;
+
+i {
+  padding: 24px;
+  color: $grey-1;
 }
-.footer-links {
-  align-items: center;
-}
-.footer-links a {
-  color: black;
-  opacity: 0.15;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  opacity: 1;
-}
-.footer .fa-heart {
-  color: #D23333;
+
+ i:hover {
+  cursor: pointer;
+  color: $grey-2;
+ }
+
+ .fa-heart {
+  color: $secondary-colour;
+ }
 }
