@@ -1,2 +1,19 @@
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
+<%= render "components/navbar" %>
+
+
+<div class="card-booking">
+  <%# @islands.bookings.each do |booking| %>
+    <div class="card-product">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-product-infos">
+        <h2><%#= booking.description %>booking details</h2>
+        <p><%#= booking.date %><strong>relevant info</strong> only: booking date(optional calendar), price</p>
+      </div>
+    </div>
+  <%# end %>
+</div>
+
+<%= link_to "Back to homepage", root_path %>
+
+<%= render "components/footer" %>
+
