@@ -5,4 +5,22 @@
 <p>Price: <%= @island.daily_rate %></p>
 <p>Avaliable: <%= @island.availability %></p>
 
+<div class="container py-10">
+  <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-white rounded p-3 shadow">
+        <h3>Book your dream Island <%= @island.name %></h3>
+        <%= simple_form_for [@island, @booking] do |f| %>
+          <%= f.input :description, placeholder: 'Enter relevant info about your booking' %>
+          <%= f.input :start_time, placeholder: 'Enter a date' %>
+          <%= f.input :end_time, placeholder: 'Enter a date' %>
+          <%= f.submit class: 'btn btn-flat' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
 <%= link_to "Back to all islands", islands_path %>
+
+
