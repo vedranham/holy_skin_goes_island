@@ -22,8 +22,7 @@ user.save!
     description: Faker::Restaurant.description,
     daily_rate: Faker::Number.number(digits: 5),
     availability: Faker::Boolean.boolean,
-    user_id: user.id,
-    booking_id: booking.id)
+    user_id: user.id)
   island.save!
 end
 booking = Booking.new(description: 'this is the description', start_time:'Thu, 27 May 2021', end_time:'Thu, 29 May 2021', user_id: user.id, island_id: 1, )
