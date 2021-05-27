@@ -1,9 +1,12 @@
 .island-details {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 83px;
 }
 
 .description {
   font-family: $body-font;
+  margin: 20px;
 }
