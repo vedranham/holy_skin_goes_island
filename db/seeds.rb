@@ -25,6 +25,10 @@ user.save!
     user_id: user.id)
   island.save!
 end
-booking = Booking.new(description: 'this is the description', start_time:'Thu, 27 May 2021', end_time:'Thu, 29 May 2021', user_id: user.id, island_id: 1, )
+booking = Booking.new(description: 'this is the description', start_time:'30 May 2021', end_time:'29 June 2021', user_id: user.id, island_id: 1, )
+booking.save!
+booking = Booking.new(description: 'this is the description', start_time:'1 June 2021', end_time:'5 June 2021', user_id: user.id, island_id: 2, )
+booking.save!
+booking = Booking.new(description: 'this is the description', start_time:'27 June 2021', end_time:'29 June 2021', user_id: user.id, island_id: 3, )
 booking.save!
 puts "Seeds created!"
