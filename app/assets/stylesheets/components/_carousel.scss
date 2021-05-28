@@ -1,8 +1,6 @@
-
 .carousel {
-
-height:360px;
-
+  width:640px;
+  height:360px;
 }
 
 .carousel-inner &gt; .item &gt; img {
@@ -11,4 +9,9 @@ height:360px;
 
 object-fit: contain;
 
+}
+
+.w-100 {
+  width: 100% !important;
+  height: 75vh;
 }
