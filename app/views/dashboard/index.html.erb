@@ -1,21 +1,16 @@
 <div class="card-booking">
-    <% @bookings.each do |booking| %>
-      <div class="card-category">
-      <%= booking.island.name %>
-      <%= booking.description %>
-      <%= booking.start_time %>
-      <%= booking.end_time %>
-      </div>
-    <% end %>
-
+  <% @bookings.each do |booking| %>
     <div class="card-product">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <img src="https://source.unsplash.com/featured/?islands,beach" />
       <div class="card-product-infos">
-        <h2><%#= booking.description %>booking details</h2>
-        <p><%#= booking.date %><strong>relevant info</strong> only: booking date(optional calendar), price</p>
+        <h2><%#= booking.description %> <%= booking.description %> </h2>
+        <h3><%#= booking.description %> <%= booking.island.name %> </h2>
+        <p><%#= booking.date %><strong>relevant info</strong> From: <%= booking.start_time %> To: <%= booking.end_time %> </p>
+        <p><%#= booking.date %><strong>This is an island for savvy people, mind your own business</strong> </p>
       </div>
     </div>
+  <% end %>
 </div>
 
-<%= link_to "Back to homepage", root_path %>
+<%= link_to "Back to all Islands", root_path %>
 
