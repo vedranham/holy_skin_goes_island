@@ -3,7 +3,12 @@ class IslandsController < ApplicationController
   before_action :set_user, only: [:create]
 
   def index
-    @islands = Island.all
+    if params[:query].present?
+      sql_query = "name ILIKE :query OR description ILIKE :query"
+      @islands = Island.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @islands = Island.all
+    end
   end
 
   def show
