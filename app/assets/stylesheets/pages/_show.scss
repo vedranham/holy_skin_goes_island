@@ -1,12 +1,18 @@
 .island-details {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin: 83px;
+  margin-top: 20px;
 }
 
 .description {
   font-family: $body-font;
-  margin: 20px;
+}
+
+.card-trip-info {
+  width: 300px;
+}
+
+#header {
+  font-family: $headers-font;
 }
