@@ -3,13 +3,13 @@
     <% @islands.each do |island| %>
     <div class="card-trip">
       <img src="https://source.unsplash.com/featured/?islands,beach" />
-        <div class="card-trip-infos">
-          <h2><%= island.name %></h2>
-          <p><%= island.address %></p>
-          <h2 class="card-trip-pricing"><%= island.daily_rate %>€</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/vedranham" class="card-trip-user avatar-bordered" />
-          <%= link_to "Show", island %>
-        </div>
+      <div class="card-trip-infos">
+        <h2><%= island.name %></h2>
+        <p><%= island.address %></p>
+        <h2 class="card-trip-pricing"><%= island.daily_rate %>€</h2>
+        <img src="https://kitt.lewagon.com/placeholder/users/vedranham" class="card-trip-user avatar-bordered" />
+      </div>
+        <%= link_to "", island_path(island), class: "card-link" %>
       </div>
     <% end %>
   </div>
