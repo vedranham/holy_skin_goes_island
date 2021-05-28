@@ -1,8 +1,12 @@
 <div class="container">
-  <h1>Congrats, your island awaits you!</h1>
+  <div id="confirmation" class="card" style="width: 20rem;">
+    <div class="card-body">
+      <h5 class="card-title">Congrats, your island awaits you!</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Address: <%= @booking.island.address %></h6>
+      <p class="card-text">Description: <%= @booking.description %><br>From: <%= @booking.start_time %> To: <%= @booking.end_time %>
+      </p>
+      <%= link_to "To my bookings", dashboard_index_path %>
 
-<p>Address: <%= @booking.island.address %></p>
-<p>Description: <%= @booking.description %></p>
-<p>From: <%= @booking.start_time %> To: <%= @booking.end_time %>  </p>
-
+    </div>
+  </div>
 </div>
