@@ -12,9 +12,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body>
-    <%= render "components/navbar" %>
-    <%= yield %>
-    <%= render "components/footer" %>
+   <body>
+      <%= render "components/navbar" %>
+       <div class="content-wrapper">
+        <%= yield %>
+        </div>
+      <%= render "components/footer" %>
   </body>
 </html>
+
